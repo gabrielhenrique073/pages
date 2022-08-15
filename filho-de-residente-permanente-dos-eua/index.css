@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  background-color: #fff;
+}
+body header {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  background-image: url(./img/liberty-state.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+body header div.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body header div.container h1, body header div.container h2 {
+  display: inline-block;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  color: #484848;
+}
+body header div.container h1 b, body header div.container h2 b {
+  color: #d71821;
+}
+body header div.container h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+body header div.container h2 {
+  font-weight: 400;
+  font-size: 26px;
+}
+body header div.container div.ctas {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body header div.container div.ctas a {
+  display: block;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #d71821;
+  box-shadow: 0px 0px 10px rgba(215, 24, 33, 0.2509803922);
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+body header div.container div.ctas a.outline {
+  background-color: transparent;
+  color: #d71821;
+  border-color: #d71821;
+  font-weight: 500;
+}
+body section {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+body section.highlight {
+  background-color: #d71821;
+}
+body section.highlight div.container h3, body section.highlight div.container article {
+  color: #ffffff;
+}
+body section.highlight div.container a.cta {
+  background-color: #ffffff;
+  color: #d71821;
+}
+body section:not(.highlight) {
+  background-color: #fff;
+}
+body section:not(.highlight) div.container h3, body section:not(.highlight) div.container article {
+  color: #d71821;
+}
+body section:not(.highlight) div.container a.cta {
+  background-color: #d71821;
+  color: #ffffff;
+}
+body section div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 10px;
+}
+body section div.container.start-row {
+  align-items: start;
+}
+body section div.container.center-row {
+  align-items: center;
+}
+body section div.container.center-column {
+  justify-content: center;
+}
+body section div.container h3, body section div.container article, body section div.container a.cta {
+  font-family: "Roboto", sans-serif;
+}
+body section div.container h3 {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 26px;
+}
+body section div.container article {
+  font-weight: 400;
+  font-size: 18px;
+}
+body section div.container img {
+  width: 70%;
+  display: block;
+}
+body section div.container a.cta {
+  display: block;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.2509803922);
+  width: fit-content;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+/*# sourceMappingURL=index.css.map */

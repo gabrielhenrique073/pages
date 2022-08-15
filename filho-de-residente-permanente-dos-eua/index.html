@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Filho de Residente Permanente dos Estados Unidos</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;900&display=swap">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <script src="https://kit.fontawesome.com/b5bcf2ec39.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>A sua mãe ou o seu pai moram nos <b>Estados Unidos</b>?</h1>
+                <h2>Se você é filho de residente permanente você é elegível para morar nos Estados Unidos legalmente e receber seu <b>Green Card</b></h2>
+                <div class="ctas">
+                    <a title="Clique para comprar o e-book" href="https://pay.hotmart.com/Q73832689K">Comprar e-book</a>
+                    <a title="Clique para saber mais sobre o e-book" class="outline" href="#quero-saber-mais">Quero saber mais</a>
+                </div>
+            </div>
+        </header>
+        <section class="highlight" id="quero-saber-mais">
+            <div class="container start-row center-column">
+                <h3>Por que esse e-book vai te ajudar?</h3>
+                <article>
+                    Eu sou filho de residente permanente e hoje moro nos Estados Unidos legalmente desde maio de 2022.<br>
+                    <br>
+                    Eu mesmo fiz todo o processo de envio de documentacao, preenchimento de formularios e agendamento de entrevista.<br>
+                    <br>
+                    Esse e-book vai te mostrar como funciona o processo imigratorio e como serao os proximos de passos que voce devara seguir.
+                </article>
+                <a class="cta" title="Clique para comprar o e-book" href="https://pay.hotmart.com/Q73832689K">Comprar e-book</a>
+            </div>
+            <div class="container center-row center-column">
+                <img src="img/usa-flag.png">
+            </div>
+        </section>
+        <section>
+            <div class="container center-row center-column">
+                
+            </div>
+            <div class="container start-row center-column">
+                <h3>Por que esse e-book vai te ajudar?</h3>
+                <article>
+                    Eu sou filho de residente permanente e hoje moro nos Estados Unidos legalmente desde maio de 2022.<br>
+                    <br>
+                    Eu mesmo fiz todo o processo de envio de documentacao, preenchimento de formularios e agendamento de entrevista.<br>
+                    <br>
+                    Esse e-book vai te mostrar como funciona o processo imigratorio e como serao os proximos de passos que voce devara seguir.
+                </article>
+                <a class="cta" title="Clique para comprar o e-book" href="https://pay.hotmart.com/Q73832689K">Comprar e-book</a>
+            </div>
+        </section>
+        <script>
+            window.addEventListener('load', 
+                function(load){
+                    document.querySelectorAll('[href^="#"]').forEach(
+                        element => {
+                            element.addEventListener('click', 
+                                function(click){
+                                    click.preventDefault();
+                                    const target = document.querySelector(element.attributes.href.value);
+                                    const targetBoundings = target.getBoundingClientRect();
+                                    const targetTopDistance = window.scrollY + targetBoundings.top;
+
+                                    window.scrollTo(
+                                        {
+                                            top: targetTopDistance,
+                                            behavior: 'smooth'
+                                        }
+                                    );
+                                    const isScrollFinishedInterval = setInterval(
+                                        function(){
+                                            if(window.scrollY >= targetTopDistance){
+                                                window.location.hash = element.attributes.href.value;
+                                                clearInterval(isScrollFinishedInterval);
+                                            }
+                                        },
+                                        25
+                                    )
+                                }
+                            );
+                        }
+                    )
+                }
+            );
+        </script>
+    </body>
+</html>
