@@ -1,0 +1,6 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} \s\/filho-de-residente-permanente-dos-eua\.html\s [NC]
+RewriteRule ^ /filho-de-residente-permanente-dos-eua [R=301,L]
+RewriteRule ^filho-de-residente-permanente-dos-eua$ /filho-de-residente-permanente-dos-eua.html [L]
