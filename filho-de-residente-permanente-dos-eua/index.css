@@ -253,6 +253,9 @@ section div.wrapper div.container span.price b {
   section div.wrapper div.container img.green-card-one {
     margin-left: -4%;
   }
+  section div.wrapper div.container span.price b {
+    font-size: 66px;
+  }
 }
 body {
   margin: 0px;
