@@ -1,61 +1,75 @@
-body {
-  margin: 0px;
-  background-color: #fff;
-}
-body header {
+header {
   width: 100%;
   min-height: 100vh;
+  box-sizing: border-box;
   padding-left: 10%;
   padding-right: 10%;
-  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url(/filho-de-residente-permanente-dos-eua/img/liberty-state.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-y: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header div.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  gap: 20px;
+  width: 100%;
+  max-width: 1366px;
+  box-sizing: border-box;
 }
-body header div.container {
-  width: 50%;
+header div.wrapper div.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   gap: 20px;
+  width: 50%;
 }
-body header div.container h1, body header div.container h2 {
+header div.wrapper div.container h1, header div.wrapper div.container h2 {
   display: inline-block;
   margin: 0px;
   font-family: "Roboto", sans-serif;
   color: #484848;
 }
-body header div.container h1 b, body header div.container h2 b {
+header div.wrapper div.container h1 b, header div.wrapper div.container h2 b {
   color: #d71821;
 }
-body header div.container h1 {
+header div.wrapper div.container h1 {
   font-weight: bold;
   font-size: 48px;
 }
-body header div.container h2 {
+header div.wrapper div.container h2 {
   font-weight: 400;
   font-size: 26px;
 }
-body header div.container div.ctas {
+header div.wrapper div.container div.ctas {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  width: 100%;
 }
-body header div.container div.ctas a {
+header div.wrapper div.container div.ctas a {
   display: block;
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 22px;
+  text-align: center;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #d71821;
   box-shadow: 0px 0px 10px rgba(215, 24, 33, 0.2509803922);
   width: fit-content;
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -65,80 +79,132 @@ body header div.container div.ctas a {
   border-style: solid;
   border-color: transparent;
 }
-body header div.container div.ctas a.outline {
+header div.wrapper div.container div.ctas a.outline {
   background-color: transparent;
   color: #d71821;
   border-color: #d71821;
   font-weight: 500;
 }
-body section {
-  min-height: 100vh;
+
+@media screen and (max-width: 1080px) {
+  header {
+    background-image: none;
+  }
+  header div.wrapper div.container {
+    width: 100%;
+  }
+  header div.wrapper div.container div.ctas {
+    flex-direction: column-reverse;
+  }
+  header div.wrapper div.container div.ctas a {
+    width: 100%;
+  }
+}
+section {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-body section.highlight {
-  background-color: #d71821;
-}
-body section.highlight div.container h3, body section.highlight div.container article {
-  color: #ffffff;
-}
-body section.highlight div.container a.cta {
-  background-color: #ffffff;
-  color: #d71821;
-}
-body section:not(.highlight) {
-  background-color: #fff;
-}
-body section:not(.highlight) div.container h3, body section:not(.highlight) div.container article {
-  color: #d71821;
-}
-body section:not(.highlight) div.container a.cta {
-  background-color: #d71821;
-  color: #ffffff;
-}
-body section div.container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  gap: 10px;
-}
-body section div.container.start-row {
-  align-items: start;
-}
-body section div.container.center-row {
   align-items: center;
 }
-body section div.container.center-column {
+section.price {
+  background-image: url(/filho-de-residente-permanente-dos-eua/img/liberty-state-transparent.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-x: 100%;
+  background-position-y: 100%;
+}
+section:nth-child(2n) {
+  background-color: #d71821;
+}
+section:nth-child(2n) div.wrapper div.container h3, section:nth-child(2n) div.wrapper div.container article, section:nth-child(2n) div.wrapper div.container span.price {
+  color: #fff;
+}
+section:nth-child(2n) div.wrapper div.container div.ctas a {
+  color: #d71821;
+  background-color: #fff;
+}
+section:nth-child(2n-1) {
+  background-color: #fff;
+}
+section:nth-child(2n-1) div.wrapper div.container h3 {
+  color: #d71821;
+}
+section:nth-child(2n-1) div.wrapper div.container article {
+  color: #484848;
+}
+section:nth-child(2n-1) div.wrapper div.container article b {
+  color: #d71821;
+}
+section:nth-child(2n-1) div.wrapper div.container span.price {
+  color: #484848;
+}
+section:nth-child(2n-1) div.wrapper div.container div.ctas a {
+  background-color: #d71821;
+  color: #fff;
+}
+section div.wrapper {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1366px;
+  box-sizing: border-box;
 }
-body section div.container h3, body section div.container article, body section div.container a.cta {
+section div.wrapper div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+section div.wrapper div.container h3 {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
   font-family: "Roboto", sans-serif;
-}
-body section div.container h3 {
-  margin: 0px;
   font-weight: bold;
   font-size: 26px;
+  margin: 0px;
 }
-body section div.container article {
+section div.wrapper div.container article {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
-body section div.container img {
-  width: 70%;
-  display: block;
+section div.wrapper div.container article.text-center {
+  text-align: center;
 }
-body section div.container a.cta {
+section div.wrapper div.container div.ctas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+section div.wrapper div.container div.ctas a {
   display: block;
   white-space: nowrap;
   font-weight: bold;
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.2509803922);
+  text-align: center;
+  box-sizing: border-box;
   width: fit-content;
   margin-top: 20px;
   padding-left: 20px;
@@ -149,6 +215,62 @@ body section div.container a.cta {
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
+}
+section div.wrapper div.container img {
+  display: block;
+  width: 70%;
+}
+section div.wrapper div.container span.price {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+section div.wrapper div.container span.price b {
+  font-size: 78px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1080px) {
+  section.price {
+    background-size: 60%;
+  }
+  section div.wrapper {
+    flex-direction: column;
+  }
+  section div.wrapper div.container {
+    width: 100%;
+    align-items: start;
+  }
+  section div.wrapper div.container div.ctas a {
+    width: 100%;
+  }
+  section div.wrapper div.container img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+  }
+  section div.wrapper div.container img.green-card-one {
+    margin-left: -4%;
+  }
+}
+body {
+  margin: 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .desktop {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .mobile {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

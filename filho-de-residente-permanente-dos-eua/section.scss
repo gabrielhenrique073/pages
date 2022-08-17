@@ -1,0 +1,195 @@
+section{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.price{
+        background-image: url(/filho-de-residente-permanente-dos-eua/img/liberty-state-transparent.png);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position-x: 100%;    
+        background-position-y: 100%;    
+    }
+    &:nth-child(2n){
+        background-color: $primary-color;
+        
+        div.wrapper{
+            div.container{
+                h3, article, span.price{
+                    color: #fff;
+                }
+                div.ctas{
+                    a{
+                        color: $primary-color;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &:nth-child(2n - 1){
+        background-color: #fff;
+
+        div.wrapper{
+            div.container{
+                h3{
+                    color: $primary-color;
+                }
+                article{
+                    color: #484848;
+
+                    b{
+                        color: $primary-color;
+                    }
+                } 
+                span.price{
+                    color: #484848;
+                }
+                div.ctas{
+                    a{
+                        background-color: $primary-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    div.wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        width: 100%;
+        max-width: $max-width;
+        box-sizing: border-box;
+
+        div.container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            width: 50%;
+
+            h3{
+                width: 100%;
+                text-align: left;
+                display: inline-block;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: 26px;
+                margin: 0px;
+            }
+            article{
+                width: 100%;
+                text-align: left;
+                display: inline-block;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+
+                &.text-center{
+                    text-align: center;
+                }
+            }
+            div.ctas{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+
+                a{
+                    display: block;
+                    
+                    white-space: nowrap;
+                    font-weight: bold;
+                    font-size: 18px;
+                    font-family: 'Roboto', sans-serif;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    box-shadow: 0px 0px 10px #48484840;
+                    text-align: center;
+                    
+                    box-sizing: border-box;
+                    width: fit-content;
+                    
+                    margin-top: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                
+                    border-radius: 5px;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: transparent;
+                }
+            }
+            img{
+                display: block;
+                width: 70%;
+            }
+            span.price{
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+
+                b{
+                    font-size: 78px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px){
+    section{
+
+        &.price{
+            background-size: 60%;
+        }
+
+        div.wrapper{
+            flex-direction: column;
+
+            div.container{
+                width: 100%;
+                align-items: start;    
+
+                h3{}
+                article{}
+                div.ctas{
+                    a{
+                        width: 100%;
+                    }
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                    max-width: 420px;
+
+                    &.green-card-one{
+                        margin-left: -4%;
+                    }
+                }
+            }
+        }
+    }
+}

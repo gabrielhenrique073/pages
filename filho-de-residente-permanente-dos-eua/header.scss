@@ -1,0 +1,121 @@
+header{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-image: url(/filho-de-residente-permanente-dos-eua/img/liberty-state.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div.wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 20px;
+
+        width: 100%;
+        max-width: $max-width;
+        box-sizing: border-box;
+
+        div.container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+
+            width: 50%;
+
+            h1, h2{
+                display: inline-block;
+                margin: 0px;
+                font-family: 'Roboto', sans-serif;
+                color: #484848;
+
+                b{
+                    color: $primary-color;
+                }
+            }
+            h1{
+                font-weight: bold;
+                font-size: 48px;
+            }
+            h2{
+                font-weight: 400;
+                font-size: 26px;
+            }
+            div.ctas{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                width: 100%;
+
+                a{
+                    display: block;
+                
+                    white-space: nowrap;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    font-size: 22px;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background-color: $primary-color;
+                    box-shadow: 0px 0px 10px $primary-color-transparent;
+                
+                    width: fit-content;
+                    box-sizing: border-box;
+                    
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                
+                    border-radius: 5px;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: transparent;
+
+                    &.outline{
+                        background-color: transparent;
+                        color: $primary-color;
+                        border-color: $primary-color;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header{
+        background-image: none;
+        div.wrapper{
+            div.container{
+                width: 100%;
+                div.ctas{
+                    flex-direction: column-reverse;
+
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
