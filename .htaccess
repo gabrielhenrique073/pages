@@ -1,6 +1,14 @@
 Options -MultiViews
-RewriteEngine On
+RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{THE_REQUEST} \s\/filho-de-residente-permanente-dos-eua\s [NC]
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresDefault "access plus 120 seconds"
+    <IfModule mod_headers.c>
+        Header append Cache-Control "public"
+    </IfModule>
+</IfModule>
