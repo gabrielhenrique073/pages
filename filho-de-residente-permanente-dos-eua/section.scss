@@ -114,7 +114,11 @@ section{
                 align-items: center;
 
                 a{
-                    display: block;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
                     
                     white-space: nowrap;
                     font-weight: 700;
@@ -138,6 +142,12 @@ section{
                     border-width: 2px;
                     border-style: solid;
                     border-color: transparent;
+
+                    i{
+                        color: inherit;
+                        font-size: 27px;
+                        line-height: 27px;
+                    }
                 }
             }
             img{

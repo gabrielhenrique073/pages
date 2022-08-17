@@ -64,7 +64,11 @@ header{
                 width: 100%;
 
                 a{
-                    display: block;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
                 
                     white-space: nowrap;
                     font-family: 'Roboto', sans-serif;
@@ -95,6 +99,12 @@ header{
                         color: $primary-color;
                         border-color: $primary-color;
                         font-weight: 500;
+                    }
+
+                    i{
+                        color: inherit;
+                        font-size: 27px;
+                        line-height: 27px;
                     }
                 }
             }
