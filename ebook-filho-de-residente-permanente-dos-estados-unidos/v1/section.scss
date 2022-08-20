@@ -14,7 +14,7 @@ section{
     align-items: center;
 
     &.price{
-        background-image: url(/filho-de-residente-permanente-dos-eua/img/liberty-state-transparent.webp);
+        background-image: url(/ebook-filho-de-residente-permanente-dos-estados-unidos/v1/img/liberty-state-transparent.webp);
         background-repeat: no-repeat;
         background-size: 30%;
         background-position-x: 100%;    
@@ -107,11 +107,12 @@ section{
                 }
             }
             div.ctas{
-                width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
-                align-items: center;
+                gap: 10px;
+
+                width: 100%;
 
                 a{
                     display: flex;
@@ -132,7 +133,6 @@ section{
                     box-sizing: border-box;
                     width: fit-content;
                     
-                    margin-top: 20px;
                     padding-left: 20px;
                     padding-right: 20px;
                     padding-top: 20px;
@@ -142,6 +142,13 @@ section{
                     border-width: 2px;
                     border-style: solid;
                     border-color: transparent;
+
+                    &.outline{
+                        background-color: transparent;
+                        color: $primary-color;
+                        border-color: $primary-color;
+                        font-weight: 500;
+                    }
 
                     i{
                         color: inherit;
