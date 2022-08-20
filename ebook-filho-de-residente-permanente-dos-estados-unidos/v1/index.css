@@ -242,7 +242,13 @@ section div.wrapper div.container div.ctas a i {
 }
 section div.wrapper div.container img {
   display: block;
+  width: 100%;
+}
+section div.wrapper div.container img.w70 {
   width: 70%;
+}
+section div.wrapper div.container img.w50 {
+  width: 50%;
 }
 section div.wrapper div.container span.price {
   color: #fff;
