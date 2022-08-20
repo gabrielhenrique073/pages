@@ -266,6 +266,9 @@ section div.wrapper div.container span.price b {
     width: 100%;
     align-items: start;
   }
+  section div.wrapper div.container div.ctas {
+    flex-direction: column-reverse;
+  }
   section div.wrapper div.container div.ctas a {
     width: 100%;
   }

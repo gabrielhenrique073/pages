@@ -193,6 +193,8 @@ section{
                 h3{}
                 article{}
                 div.ctas{
+                    flex-direction: column-reverse;
+                    
                     a{
                         width: 100%;
                     }
