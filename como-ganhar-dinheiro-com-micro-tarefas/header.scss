@@ -5,6 +5,7 @@ header{
     min-height: 100vh;
     background-color: $primary-accent-color;
     background: linear-gradient(180deg, #30F844 15%, #38AD24 50%, #43BE2F 60%);
+    width: 100%;
 
     div.wrapper{
         display: flex;
@@ -52,6 +53,7 @@ header{
 
                 b{
                     color: $primary-dark-color;
+                    font-weight: inherit;
                 }
             }
             a.cta{
