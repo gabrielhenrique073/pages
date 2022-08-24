@@ -6,16 +6,11 @@
     </IfModule>
 </IfModule>
 
-DirectoryIndex none
+DirectoryIndex index.html
 Options -MultiViews -Indexes
 
 RewriteEngine on
 
 # Trailing Slash
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ /$1 [L,R=301]
-
-# Seo
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^filho-de-residente-permanente-dos-eua$ /ebook-filho-de-residente-permanente-dos-estados-unidos/v1/index.html [L]
+RewriteRule ^(.*[^/])$ /$1/ [L,R]

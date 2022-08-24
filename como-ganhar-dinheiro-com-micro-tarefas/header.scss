@@ -1,0 +1,83 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $primary-accent-color;
+    background: linear-gradient(180deg, #30F844 15%, #38AD24 50%, #43BE2F 60%);
+
+    div.wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: $stop-resize-when-max-width-is;
+        padding-left: 3%;
+        padding-right: 3%;
+
+        div.container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span.hashtag{
+                font-family: $primary-font-family;
+                font-weight: 900;
+                font-style: italic;
+                color: $primary-dark-color;
+                font-size: 26px;
+            }
+            img{
+                display: block;
+                
+                &.pig{
+                    transform: rotateY(180deg);
+                    align-self: end;
+                    width: 60%;
+                }
+                &.payments{
+                    width: 100%;
+                }
+            }
+            h1{
+                display: inline-block;
+                margin: 0px;
+                text-align: center;
+                font-family: $primary-font-family;
+                color: $primary-contrast-color;
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 32px;
+                text-transform: uppercase;
+
+                b{
+                    color: $primary-dark-color;
+                }
+            }
+            a.cta{
+                text-decoration: none;
+                color: $secondary-contrast-color;
+                background-color: $secondary-accent-color;
+                width: 100%;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-radius: 7px;
+                box-shadow: 0px 0px 10px $primary-dark-color;
+                font-family: $primary-font-family;
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media screen and (max-width: $mobile-when-width-is){
+    header{
+        div.wrapper{
+            div.container{
+
+            }
+        }
+    }
+}

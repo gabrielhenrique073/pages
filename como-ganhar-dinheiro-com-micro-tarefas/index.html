@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name= robots content="index, follow">
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="book">
+        <meta property="og:url" content="https://pages.tucanu.com/como-ganhar-dinheiro-com-micro-tarefas/">
+        <meta property="og:image" content="https://pages.tucanu.com/como-ganhar-dinheiro-com-micro-tarefas/img/cover.jpg">
+        
+        <title>Como ganhar dinheiro com micro tarefas</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="/como-ganhar-dinheiro-com-micro-tarefas/index.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/como-ganhar-dinheiro-com-micro-tarefas/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/como-ganhar-dinheiro-com-micro-tarefas/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/como-ganhar-dinheiro-com-micro-tarefas/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/como-ganhar-dinheiro-com-micro-tarefas/site.webmanifest">
+
+        <script src="https://kit.fontawesome.com/b5bcf2ec39.js" crossorigin="anonymous" defer></script>
+        
+        <!-- Analytics -->
+        <script>
+            // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            // })(window,document,'script','dataLayer','GTM-5DJPPNC');
+        </script>
+
+        <!-- Pixel -->
+        <script>
+            // !function(f,b,e,v,n,t,s)
+            // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            // n.queue=[];t=b.createElement(e);t.async=!0;
+            // t.src=v;s=b.getElementsByTagName(e)[0];
+            // s.parentNode.insertBefore(t,s)}(window, document,'script',
+            // 'https://connect.facebook.net/en_US/fbevents.js');
+            // fbq('init', '770517447521126');
+            // fbq('track', 'PageView');
+     </script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="container">
+                    <span class="hashtag">#microtarefas</span>
+                    <h1>Ganhe dinheiro na internet <b>trabalhando de casa</b> com micro tarefas</h1>
+                    <img class="pig mt20" src="./img/pig.svg">
+                    <a data-analytics="click" class="cta mt40" href="#comprar">Quero ganhar dinheiro</a>
+                    <img class="payments mt40" src="./img/payments.svg">
+                </div>
+            </div>
+        </header>
+        <script>
+            window.addEventListener('load', 
+                function(load){
+                    document.querySelectorAll('[href^="#"]').forEach(
+                        element => {
+                            element.addEventListener('click', 
+                                function(click){
+                                    click.preventDefault();
+                                    const target = document.querySelector(element.attributes.href.value);
+                                    
+                                    if(target){
+                                        const targetBoundings = target.getBoundingClientRect();
+                                        const targetTopDistance = window.scrollY + targetBoundings.top;
+
+                                        window.scrollTo(
+                                            {
+                                                top: targetTopDistance,
+                                                behavior: 'smooth'
+                                            }
+                                        );
+                                        const isScrollFinishedInterval = setInterval(
+                                            function(){
+                                                if(window.scrollY >= targetTopDistance){
+                                                    window.location.hash = element.attributes.href.value;
+                                                    clearInterval(isScrollFinishedInterval);
+                                                }
+                                            },
+                                            25
+                                        );
+                                    }
+                                }
+                            );
+                        }
+                    )
+                }
+            );
+        </script>
+    </body>
+</html>
