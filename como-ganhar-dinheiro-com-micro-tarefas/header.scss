@@ -2,10 +2,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: $primary-accent-color;
     background: linear-gradient(180deg, #30F844 15%, #38AD24 50%, #43BE2F 60%);
     width: 100%;
+    min-height: 100vh;
 
     div.wrapper{
         display: flex;
@@ -14,6 +14,8 @@ header{
         max-width: $stop-resize-when-max-width-is;
         padding-left: 3%;
         padding-right: 3%;
+        padding-top: 80px;
+        padding-bottom: 40px;
 
         div.container{
             display: flex;
@@ -29,15 +31,9 @@ header{
                 font-size: 26px;
             }
             img{
-                display: block;
-                
                 &.pig{
                     transform: rotateY(180deg);
                     align-self: end;
-                    width: 60%;
-                }
-                &.payments{
-                    width: 100%;
                 }
             }
             h1{
@@ -70,6 +66,7 @@ header{
                 font-weight: 900;
                 text-transform: uppercase;
                 font-size: 22px;
+                cursor: pointer;
             }
         }
     }
