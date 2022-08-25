@@ -3,7 +3,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #43be2f;
-  background: linear-gradient(180deg, #30F844 15%, #38AD24 50%, #43BE2F 60%);
+  background: linear-gradient(180deg, #30F844 15%, #38AD24 50%, #43be2f 60%);
   width: 100%;
   min-height: 100vh;
 }
@@ -32,7 +32,6 @@ header div.wrapper div.container span.hashtag {
 }
 header div.wrapper div.container img.pig {
   transform: rotateY(180deg);
-  align-self: end;
 }
 header div.wrapper div.container h1 {
   display: inline-block;
@@ -73,6 +72,9 @@ section {
   background-color: #43be2f;
   width: 100%;
 }
+section.price {
+  background: linear-gradient(180deg, #43be2f 0%, #30F844 65%, #43be2f 80%);
+}
 section div.wrapper {
   display: flex;
   justify-content: center;
@@ -88,9 +90,6 @@ section div.wrapper div.container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-section div.wrapper div.container img {
-  align-self: end;
 }
 section div.wrapper div.container article {
   font-family: "MontSerrat", sans-serif;
@@ -141,7 +140,7 @@ section div.wrapper div.container div.box span.title {
   text-align: center;
 }
 section div.wrapper div.container div.box span.title b {
-  color: #f6c115;
+  color: #ffffff;
   font-weight: inherit;
 }
 section div.wrapper div.container div.box a.cta {
@@ -171,6 +170,14 @@ body {
 }
 body img {
   display: block;
+}
+
+.ass {
+  align-self: start;
+}
+
+.ase {
+  align-self: end;
 }
 
 .w100 {
