@@ -7,7 +7,7 @@
 </IfModule>
 
 DirectoryIndex index.html
-Options -MultiViews -Indexes
+Options -MultiViews
 
 RewriteEngine on
 
